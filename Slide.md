@@ -65,7 +65,7 @@ Immaginate che ogni variabile sia una banana.
 4. Scope di Blocco: Il Piccolo Cestino { } 🧺
     - Questo è il territorio più piccolo di tutti, delimitato dalle parentesi graffe { } (che troviamo ad esempio negli if o nei cicli).
     - Se usate let o const dentro queste graffe, la variabile rimane chiusa nel "cestino" e non è accessibile all'esterno.
-### Slide 6 best practices per i nomi delle variabili
+## Slide 6 best practices per i nomi delle variabili
 1. Le Regole della Giungla (Obbligatorie) 🌴
     - Per non far arrabbiare il grande Gorilla (il browser), dovete seguire queste leggi ferree:
         - Cosa potete usare: Potete usare lettere, numeri, il simbolo del dollaro ($) e il trattino basso (_).
