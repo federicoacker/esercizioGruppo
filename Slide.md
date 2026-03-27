@@ -25,8 +25,20 @@
     - const (La Scatola Sigillata): Si comporta come let, ma con una regola extra: una volta che le dai un valore, non puoi più cambiarlo (non è riassegnabile). 
     
     - Consiglio da Senior: Usate sempre const a meno che non siate sicuri che il valore debba cambiare; renderà il vostro codice molto più prevedibile
-## SLIDE 4 Assegnazione e Dichiarazione
-## Slide 3 
+## SLIDE 3 Assegnazione e Dichiarazione
+1. Dichiarazione: "Prendere la scatola"
+    - La dichiarazione consiste nel dire al computer: "Ehi, mi serve una scatola nuova!" e darle un nome.
+    Si fa usando le parole chiave let o const.
+    - In questa fase, la scatola esiste ma è vuota (tecnicamente si dice che il suo valore è undefined).
+2. Inizializzazione: "Mettere la prima banana"
+    - L'inizializzazione è il momento magico in cui metti un valore dentro la scatola per la prima volta.
+        - Puoi farlo nello stesso momento in cui dichiari la scatola (es: let banana = 1;).
+        - Attenzione: Se usi const, devi inizializzare la scatola subito, non puoi lasciarla vuota neanche per un secondo!
+3. Assegnazione: "Cambiare banana"
+    - L'assegnazione significa togliere quello che c'era nella scatola e metterci qualcosa di nuovo. 
+    - Si usa il simbolo dell'uguale (=).
+    - Puoi farlo quante volte vuoi con let, ma mai con const: una volta che una scimmia mette qualcosa in una scatola const, quel valore rimane lì per sempre e non si può più cambiare.
+## Slide 4 
 1. JavaScript è "loosely typed" (tipizzato dinamicamente): non dobbiamo dire alla scatola cosa conterrà, lo capirà lei da sola al momento dell'assegnazione. I principali tipi sono:
     - Number: Numeri interi o decimali (es: 5 o 3.14).
     - String: Testo racchiuso tra virgolette o apici (es: "Ciao").
@@ -34,7 +46,7 @@
     - Undefined / Null: Quando la scatola è vuota o il valore è intenzionalmente nullo.
     - Strutture complesse: Possiamo anche salvare Array (liste di dati in []) o Object (modelli di oggetti reali con proprietà).
 
-## Slide 4: L'armadio delle Scope
+## Slide 5: L'armadio delle Scope
 1. Cos’è lo Scope? (Spiegazione per scimmie 🐒)
 - Lo scope è semplicemente il territorio in cui una variabile "vive" ed è visibile.
 Immaginate che ogni variabile sia una banana.
@@ -53,4 +65,4 @@ Immaginate che ogni variabile sia una banana.
 4. Scope di Blocco: Il Piccolo Cestino { } 🧺
     - Questo è il territorio più piccolo di tutti, delimitato dalle parentesi graffe { } (che troviamo ad esempio negli if o nei cicli).
     - Se usate let o const dentro queste graffe, la variabile rimane chiusa nel "cestino" e non è accessibile all'esterno.
-### Slide 5 best practices per i nomi delle variabili
+### Slide 6 best practices per i nomi delle variabili
