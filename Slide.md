@@ -24,7 +24,7 @@
     - let (La Nuova Variabile): Risolve i problemi di var. È limitata al blocco in cui nasce (block-scoped) e non permette di essere usata prima della dichiarazione o di essere ridichiarata per errore.
     - const (La Scatola Sigillata): Si comporta come let, ma con una regola extra: una volta che le dai un valore, non puoi più cambiarlo (non è riassegnabile). 
     
-    - Consiglio da Senior: Usate sempre const a meno che non siate sicuri che il valore debba cambiare; renderà il vostro codice molto più prevedibile
+    - Consiglio da Samuel: Usate sempre const a meno che non siate sicuri che il valore debba cambiare; renderà il vostro codice molto più prevedibile
 ## SLIDE 3 Assegnazione e Dichiarazione
 1. Dichiarazione: "Prendere la scatola"
     - La dichiarazione consiste nel dire al computer: "Ehi, mi serve una scatola nuova!" e darle un nome.
@@ -66,3 +66,21 @@ Immaginate che ogni variabile sia una banana.
     - Questo è il territorio più piccolo di tutti, delimitato dalle parentesi graffe { } (che troviamo ad esempio negli if o nei cicli).
     - Se usate let o const dentro queste graffe, la variabile rimane chiusa nel "cestino" e non è accessibile all'esterno.
 ### Slide 6 best practices per i nomi delle variabili
+1. Le Regole della Giungla (Obbligatorie) 🌴
+    - Per non far arrabbiare il grande Gorilla (il browser), dovete seguire queste leggi ferree:
+        - Cosa potete usare: Potete usare lettere, numeri, il simbolo del dollaro ($) e il trattino basso (_).
+        - Il Tabù del Numero: Non iniziate mai il nome con un numero!. Il computer si confonderebbe e inizierebbe a urlare (errore di sintassi).
+        - Niente parole magiche: Non potete chiamare una scatola con i nomi che il linguaggio usa già, come let, const, function o if.
+        - Occhio alle orecchie: JavaScript è case-sensitive. Per lui, una scatola chiamata banana e una chiamata BANANA sono due territori completamente diversi.
+2. Lo Stile del Cammello (camelCase) 🐫
+    - Nella nostra tribù di sviluppatori, quando un nome è fatto da più parole, usiamo il camelCase.
+    - Si scrive tutto attaccato: la prima parola è minuscola, le altre iniziano con la Maiuscola (es: contaBananeMangiante, nomeScimmiaFortunata). 
+    - Sembra proprio la gobba di un cammello!.
+3. Non siate scimmie pigre! (Nomi Descrittivi) 🍌
+    - Non chiamate una scatola solo x o a. Che c'è dentro? Una banana? Una noce di cocco?
+    - Siate precisi: Usate nomi che spieghino il contenuto, come prezzoTotale o colorePelo.
+    - Evitate i nomi "boh": Nomi come data o valore non dicono nulla e confondono il branco.
+    - Meglio lungo che misterioso: È meglio un nome lungo come utenteCheHaEffettuatoIlLogin che un corto e inutile.
+4. Le Urla di Avvertimento (Costanti Forti) 📢
+    - Se avete un valore che non cambierà mai e che conoscete già prima di iniziare a saltare tra gli alberi (come un codice colore), scrivetelo tutto in GRANDE con l'underscore.
+    - Esempio: COLORE_GIALLO_BANANA o NUMERO_MASSIMO_SCIMMIE. Così tutti capiranno subito che quella scatola è sacra e non va toccata.
