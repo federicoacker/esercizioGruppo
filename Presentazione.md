@@ -19,18 +19,41 @@
 
 
 # Presentatore 1:
-	Iniziamo cercando di capire cosa sia una variabile, si può definirla una scatola,
-	un contenitore il cui compito è conservare informazioni che il programma utilizzerà in futuro
-	ognuna di queste scatole ha due elementi chiave,
-	il nome, che ci permette di ritrovarla quando sarà necessaria e
-	il contenuto, ovvero, l'informazione che andremo ad utilizzare.
-	L'utilità delle variabili, è appunto quella di salvare dati, facendo si che siano
-	a disposizione quando saranno necessari più avanti nel codice, dando anche 
-	la possibilità in alcuni casi di modificarne il contenuto durante l'esecuzione.
-# Presentatore 2:
-	Non tutte le variabili si comportano allo stesso modo. In passato var causava diversi problemi,
-	perché una variabile poteva restare accessibile anche fuori dal blocco in cui era stata dichiarata.
-	Per questo sono stati introdotti let e const: let limita la variabile al blocco logico,
-	mentre const viene usato quando il valore non deve essere modificato dal programma.
-	il nostro esperto Samuel consiglia di dichiarare sempre prima con const e usare let solo quando è necessaria una modifica.
+	Iniziamo cercando di capire cosa sia una variabile, si 	puo definirla una scatola, un contenitore il cui compito è conservare informazioni che il programma utilizzerà in futuro ognuna di queste scatole ha due elementi chiave, il nome, che ci permette di ritrovarla quando sarà necessaria e il contenuto, ovvero, l'informazione che andremo ad utilizzare.
+	L'utilità delle variabili, è appunto quella di salvare dati, facendo si che siano a disposizione quando saranno necessari più avanti nel codice, dando anche la possibilità in alcuni casi di modificarne il contenuto durante l'esecuzione.
 
+# Presentatore 2:
+	Non tutte le variabili si comportano allo stesso modo. In passato var causava diversi problemi, perchè una variabile rimaneva accessibile anche fuori dal blocco in cui era stata dichiarata.
+	Per questo sono stati introdotti let e const: let limita la variabile al blocco logico, mentre const viene usato quando il valore non deve essere modificato dal programma.
+	il nostro esperto Samuel consiglia di dichiarare sempre prima con const e usare let quando è necessaria una modifica durante lo svolgimento del programma.
+
+# Presentatore 3:
+	Il ciclo di vita di una scim... variabile inizia con la dichiarazione, cioè il momento in cui viene creata usando const o let.
+	Successivamente avviene l’inizializzazione, con l’assegnazione del primo valore.
+	Con const, queste due fasi devono coincidere.
+	Infine può esserci una riassegnazione, cioè il cambiamento del valore, possibile solo nel caso di let.
+
+# Presentatore 4:
+	Dentro una variabile possiamo memorizzare diversi tipi di dati. In JavaScript il tipo viene identificato automaticamente, quindi non va dichiarato esplicitamente. Possiamo avere numeri, testo, valori booleani e anche strutture più complesse come oggetti e array.
+	( Anche se un array sembra diverso da un oggetto, in JavaScript viene comunque trattato come un oggetto speciale. Per questo typeof restituisce "object". Per distinguere correttamente un array si usa "Array.isArray()" )
+
+# Presentatore 5:
+	Ora che abbiamo le variabili, dobbiamo capire dove possono essere usate: questo è lo scope.
+	v1 - Lo scope globale è come una piazza aperta, mentre lo scope locale è una stanza privata.
+	v2 - Lo scope globale rende una variabile accessibile ovunque nel programma.
+	Lo scope locale, invece, la limita a una funzione.
+	Con let e const esiste anche lo scope di blocco, che restringe la visibilità al blocco logico in cui la variabile viene dichiarata.
+	In generale, uno scope interno può vedere quello esterno, ma non il contrario.
+	(?)- In JavaScript capire lo scope è fondamentale, perché determina dove una variabile può essere letta o modificata.
+
+# Presentatore 6:
+	Per concludere, anche il codice ha le sue regole di stile.
+	v1 - Si usa il camelCase, quindi nomi come contaBanane, evitando sigle poco chiare come x.
+	I nomi dovrebbero essere descrittivi, ad esempio utenteLoggato.
+	v2 - Un nome descrittivo aggiunto all'utilizzo del camelCase rendono il codice più chiaro leggibile a lettori esterni e ignari delle leggi della giungla.	
+	Inoltre JavaScript è case sensitive, quindi banana e BANANA non vengono considerate uguali.
+	per le costanti si usa spesso lo snake_case con parole in 	maiuscolo, ad esempio NUMERO_MASSIMO_SCIMMIE.
+
+
+
+	
