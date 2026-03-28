@@ -1,37 +1,19 @@
-# Presentatore 1: (Dovrà anche presentare l'inizio)
-    Il concetto di Variabile (Slide 3) 
-    "Iniziamo il nostro viaggio cercando di capire cos'è una variabile. In JavaScript, non dovete pensare a concetti matematici astratti, ma semplicemente a una scatola di cartone. Una variabile è un contenitore fisico progettato per conservare informazioni che ci serviranno in futuro nel nostro programma. Ogni scatola ha tre elementi chiave: l'Etichetta, ovvero un nome univoco (come 'nomeUtente') per poterla ritrovare; il Contenuto, che è l'informazione vera e propria memorizzata all'interno; e infine l'Utilità, perché ci permette di salvare dati adesso per riutilizzarli in altri punti della giungla del codice." 
-# Presentatore 2: 
-    Dal Caos all'Ordine (Slide 4) 
-    "Ma non tutte le scatole sono uguali. In passato vivevamo nel 'Caos di var': prima del 2015, questo strumento causava molti problemi, come i 'leak' di dati dove le variabili scappavano dai blocchi logici sovrascrivendo altri dati per errore, o le 'ridichiarazioni selvagge' che rendevano il debugging un incubo. Oggi usiamo la Precisione di ES6 con due strumenti specifici: let, la nuova variabile confinata nel blocco in cui nasce, e const, la 'scatola sigillata'. Una volta riempita, il valore di const è bloccato e non può essere cambiato. Il consiglio del nostro esperto Samuel è di usare sempre const, a meno che non siate certi che il valore debba cambiare." 
-# Presentatore 3: 
-    Ciclo di Vita della Scatola (Slide 5) 
-    "Vediamo ora come nasce e come cambia una scatola attraverso il suo ciclo di vita. Tutto inizia con la Dichiarazione: usiamo let o const per dire al computer che ci serve una scatola nuova; in questa fase la scatola esiste ma è vuota, ovvero undefined. Segue l'Inizializzazione, il momento magico in cui inseriamo il primo valore, la nostra 'prima banana'. Ricordate: con const dovete farlo subito, non può restare vuota ! Infine abbiamo l'Assegnazione, dove usiamo il simbolo = per cambiare il contenuto. Potete farlo all'infinito con let, ma mai con const, perché quel valore rimane lì per sempre." 
-# Presentatore 4: 
-    I Tipi di Dato (Slide 6)
-    "Cosa possiamo mettere dentro queste scatole? JavaScript è a tipizzazione dinamica, il che significa che la scatola capisce da sola cosa contiene senza doverlo dichiarare. Possiamo inserirci numeri interi o decimali (Number), oppure del testo racchiuso tra virgolette (String). Esistono i Boolean, che rappresentano solo due strade: true o false. Se la scatola è intenzionalmente vuota, parliamo di Undefined o Null. Infine, per le scimmie più esperte, ci sono le Strutture Complesse come gli Array (liste di dati) o gli Oggetti, che sono modelli con proprietà specifiche." 
-# Presentatore 5: 
-    Il Territorio dello Scope (Slide 7, 8, 9) 
-    "Ora che abbiamo le scatole, dobbiamo sapere dove vivono: questo è lo Scope. Lo Scope Globale è la 'Grande Radura', la piazza principale della giungla dove tutti possono vedere e toccare le banane, ma con il rischio che qualcuno le rovini per sbaglio. Se cerchiamo privacy, entriamo nella 'Caverna della Funzione' (Scope Locale), dove le variabili esistono solo all'interno e sono invisibili a chi sta fuori. Esiste anche il 'Piccolo Cestino' (Scope di Blocco) per let e const. La regola d'oro della gerarchia è: chi sta in una stanza piccola può vedere fuori nelle stanze grandi, ma chi sta fuori non può mai guardare dentro !" 
-# Presentatore 6: 
-    Il Galateo del Branco (Slide 10) 
-    "Per concludere, ogni buona tribù ha delle regole di stile per non far arrabbiare il browser. Usiamo il camelCase: scrivete tutto attaccato iniziando la seconda parola con la maiuscola, come 'contaBanane'. Non siate scimmie pigre: evitate nomi generici come 'x' e usate nomi descrittivi come 'utenteLoggato'. Ricordate che JavaScript è case-sensitive: 'banana' e 'BANANA' sono due scatole diverse. Infine, per le Costanti Forti, ovvero valori sacri che non cambieranno mai, scrivete tutto in MAIUSCOLO con l'underscore, come 'NUMERO_MASSIMO_SCIMMIE'. Grazie a tutti e buona sopravvivenza nel codice!"
-
 
 # Presentatore 1:
-	Iniziamo cercando di capire cosa sia una variabile, si 	puo definirla una scatola, un contenitore il cui compito è conservare informazioni che il programma utilizzerà in futuro ognuna di queste scatole ha due elementi chiave, il nome, che ci permette di ritrovarla quando sarà necessaria e il contenuto, ovvero, l'informazione che andremo ad utilizzare.
+    Presentazione Generale
+	Iniziamo cercando di capire cosa sia una variabile, si puo definirla una scatola, un contenitore il cui compito è conservare informazioni che il programma utilizzerà in futuro. Ognuna di queste scatole ha due elementi chiave, il nome, che ci permette di ritrovarla quando sarà necessaria e il contenuto, ovvero, l'informazione che andremo ad utilizzare.
 	L'utilità delle variabili, è appunto quella di salvare dati, facendo si che siano a disposizione quando saranno necessari più avanti nel codice, dando anche la possibilità in alcuni casi di modificarne il contenuto durante l'esecuzione.
-
+    
 # Presentatore 2:
 	Non tutte le variabili si comportano allo stesso modo. In passato var causava diversi problemi, perchè una variabile rimaneva accessibile anche fuori dal blocco in cui era stata dichiarata.
-	Per questo sono stati introdotti let e const: let limita la variabile al blocco logico, mentre const viene usato quando il valore non deve essere modificato dal programma.
+	Per questo sono stati introdotti let e const: entrambi limitano la variabile al blocco logico, e const viene usato quando il valore non deve essere modificato dal programma.
 	il nostro esperto Samuel consiglia di dichiarare sempre prima con const e usare let quando è necessaria una modifica durante lo svolgimento del programma.
 
 # Presentatore 3:
-	Il ciclo di vita di una scim... variabile inizia con la dichiarazione, cioè il momento in cui viene creata usando const o let.
+	Il ciclo di vita di una scim... variabile inizia con la dichiarazione, cioè il momento in cui viene creata usando const o let. Questo equivale a chiedere al computer di creare una nuova scatola.
 	Successivamente avviene l’inizializzazione, con l’assegnazione del primo valore.
 	Con const, queste due fasi devono coincidere.
-	Infine può esserci una riassegnazione, cioè il cambiamento del valore, possibile solo nel caso di let.
+	Infine può esserci una riassegnazione, cioè il cambiamento del valore, possibile solo nel caso di let. 
 
 # Presentatore 4:
 	Dentro una variabile possiamo memorizzare diversi tipi di dati. In JavaScript il tipo viene identificato automaticamente, quindi non va dichiarato esplicitamente. Possiamo avere numeri, testo, valori booleani e anche strutture più complesse come oggetti e array.
@@ -39,20 +21,37 @@
 
 # Presentatore 5:
 	Ora che abbiamo le variabili, dobbiamo capire dove possono essere usate: questo è lo scope.
-	v1 - Lo scope globale è come una piazza aperta, mentre lo scope locale è una stanza privata.
-	v2 - Lo scope globale rende una variabile accessibile ovunque nel programma.
+    Abbiamo tre tipi di scope:
+    Globale,
+    Locale ( o di funzione)
+    e di Blocco.
+    Lo scope globale rende una variabile accessibile ovunque nel programma.
 	Lo scope locale, invece, la limita a una funzione.
-	Con let e const esiste anche lo scope di blocco, che restringe la visibilità al blocco logico in cui la variabile viene dichiarata.
-	In generale, uno scope interno può vedere quello esterno, ma non il contrario.
-	(?)- In JavaScript capire lo scope è fondamentale, perché determina dove una variabile può essere letta o modificata.
+    Il vecchio var famosamente aveva scope globale o di funzione e quindi se dichiarato in un blocco era leggibile e modificabile anche al di fuori di esso.
+	let e const invece rispettano lo scope di blocco, che restringe la visibilità al blocco logico in cui la variabile viene dichiarata.
+	In generale, uno scope interno può vedere variabili in quello esterno, ma non il contrario.
+    In JavaScript capire lo scope è fondamentale, perché determina dove una variabile esiste e può essere letta o modificata.
 
 # Presentatore 6:
-	Per concludere, anche il codice ha le sue regole di stile.
-	v1 - Si usa il camelCase, quindi nomi come contaBanane, evitando sigle poco chiare come x.
-	I nomi dovrebbero essere descrittivi, ad esempio utenteLoggato.
-	v2 - Un nome descrittivo aggiunto all'utilizzo del camelCase rendono il codice più chiaro leggibile a lettori esterni e ignari delle leggi della giungla.	
+	Per concludere, anche i nomi delle variabili hanno le loro regole di stile.
+    Nei nomi delle variabili sono consentiti solo lettere, numeri gli underscore e il simbolo del dollaro.
+    Nota bene: I nomi in javascript non possono mai iniziare con un numero o utilizzare parole riservate da javascript.
+    Un nome descrittivo aggiunto all'utilizzo del camelCase rende il codice più chiaro e leggibile a lettori esterni e ignari delle leggi della giungla o anche agli esperti.	
 	Inoltre JavaScript è case sensitive, quindi banana e BANANA non vengono considerate uguali.
-	per le costanti si usa spesso lo snake_case con parole in 	maiuscolo, ad esempio NUMERO_MASSIMO_SCIMMIE.
+	Per le costanti si usa spesso lo snake_case con parole in maiuscolo, ad esempio NUMERO_MASSIMO_SCIMMIE.
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
