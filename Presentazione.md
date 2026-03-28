@@ -1,6 +1,7 @@
 
 # Presentatore 1:
     Presentazione Generale
+	Salve siamo il gruppo 1 e oggi tenteremo di spiegare, in maniera tale che anche un scimmia lo capisca, cosa sono le variabili e il concetto di scope in JavaScript.
 	Iniziamo cercando di capire cosa sia una variabile, si puo definirla una scatola, un contenitore il cui compito è conservare informazioni che il programma utilizzerà in futuro. Ognuna di queste scatole ha due elementi chiave, il nome, che ci permette di ritrovarla quando sarà necessaria e il contenuto, ovvero, l'informazione che andremo ad utilizzare.
 	L'utilità delle variabili, è appunto quella di salvare dati, facendo si che siano a disposizione quando saranno necessari più avanti nel codice, dando anche la possibilità in alcuni casi di modificarne il contenuto durante l'esecuzione.
     
