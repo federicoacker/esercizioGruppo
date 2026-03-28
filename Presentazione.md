@@ -1,5 +1,5 @@
 
-# Presentatore 1:
+# Presentatore 1 (Filippo):
     Presentazione Generale
 	Salve siamo il gruppo 1 e oggi tenteremo di spiegare, in maniera tale che anche un scimmia lo capisca, cosa sono le variabili e il concetto di scope in JavaScript.
 	Iniziamo cercando di capire cosa sia una variabile, si puo definirla una scatola, un contenitore il cui compito è conservare informazioni che il programma utilizzerà in futuro. Ognuna di queste scatole ha due elementi chiave, il nome, che ci permette di ritrovarla quando sarà necessaria e il contenuto, ovvero, l'informazione che andremo ad utilizzare.
@@ -16,11 +16,11 @@
 	Con const, queste due fasi devono coincidere.
 	Infine può esserci una riassegnazione, cioè il cambiamento del valore, possibile solo nel caso di let. 
 
-# Presentatore 4:
+# Presentatore 4 (Francesco):
 	Dentro una variabile possiamo memorizzare diversi tipi di dati. In JavaScript il tipo viene identificato automaticamente, quindi non va dichiarato esplicitamente. Possiamo avere numeri come interi e decimali, stringhe che sono testi racchiusi tra virgolette o apici, valori booleani che sono solo true o false e anche strutture più complesse come oggetti e array, inoltre ci sono valori speciali che indicano che la scatola è vuota che sono undefined e null.
 	Anche se un array sembra diverso da un oggetto, in JavaScript viene comunque trattato come un oggetto speciale. Per questo typeof restituisce "object". Per distinguere correttamente un array si usa "Array.isArray()"
 
-# Presentatore 5:
+# Presentatore 5 (Federico):
 	Ora che abbiamo le variabili, dobbiamo capire dove possono essere usate: questo è lo scope.
     Abbiamo tre tipi di scope:
     Globale,
@@ -45,7 +45,7 @@ console.log(globalScimmia);
 	Ci restituirà "mela";
     In JavaScript capire lo scope è fondamentale, perché determina dove una variabile esiste e può essere letta o modificata.
 
-# Presentatore 6:
+# Presentatore 6 (Giulio):
 	Per concludere, anche i nomi delle variabili hanno le loro regole di stile.
     Nei nomi delle variabili sono consentiti solo lettere, numeri, gli underscore e il simbolo del dollaro.
     Nota bene: I nomi in javascript non possono mai iniziare con un numero o utilizzare parole riservate da javascript.
