@@ -16,3 +16,21 @@
 # Presentatore 6: 
     Il Galateo del Branco (Slide 10) 
     "Per concludere, ogni buona tribù ha delle regole di stile per non far arrabbiare il browser. Usiamo il camelCase: scrivete tutto attaccato iniziando la seconda parola con la maiuscola, come 'contaBanane'. Non siate scimmie pigre: evitate nomi generici come 'x' e usate nomi descrittivi come 'utenteLoggato'. Ricordate che JavaScript è case-sensitive: 'banana' e 'BANANA' sono due scatole diverse. Infine, per le Costanti Forti, ovvero valori sacri che non cambieranno mai, scrivete tutto in MAIUSCOLO con l'underscore, come 'NUMERO_MASSIMO_SCIMMIE'. Grazie a tutti e buona sopravvivenza nel codice!"
+
+
+# Presentatore 1:
+	Iniziamo cercando di capire cosa sia una variabile, si può definirla una scatola,
+	un contenitore il cui compito è conservare informazioni che il programma utilizzerà in futuro
+	ognuna di queste scatole ha due elementi chiave,
+	il nome, che ci permette di ritrovarla quando sarà necessaria e
+	il contenuto, ovvero, l'informazione che andremo ad utilizzare.
+	L'utilità delle variabili, è appunto quella di salvare dati, facendo si che siano
+	a disposizione quando saranno necessari più avanti nel codice, dando anche 
+	la possibilità in alcuni casi di modificarne il contenuto durante l'esecuzione.
+# Presentatore 2:
+	Non tutte le variabili si comportano allo stesso modo. In passato var causava diversi problemi,
+	perché una variabile poteva restare accessibile anche fuori dal blocco in cui era stata dichiarata.
+	Per questo sono stati introdotti let e const: let limita la variabile al blocco logico,
+	mentre const viene usato quando il valore non deve essere modificato dal programma.
+	il nostro esperto Samuel consiglia di dichiarare sempre prima con const e usare let solo quando è necessaria una modifica.
+
