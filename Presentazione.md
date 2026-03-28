@@ -30,7 +30,19 @@
 	Lo scope locale, invece, la limita a una funzione.
     Il vecchio var famosamente aveva scope globale o di funzione e quindi se dichiarato in un blocco era leggibile e modificabile anche al di fuori di esso.
 	let e const invece rispettano lo scope di blocco, che restringe la visibilità al blocco logico in cui la variabile viene dichiarata.
-	In generale, uno scope interno può vedere variabili in quello esterno, ma non il contrario.
+	In generale, uno scope interno può vedere e modificare variabili in quello esterno, ma non il contrario.
+	Ad esempio
+
+```
+let globalScimmia = "orangutan";
+	if(true){
+		globalScimmia = "sapiens";
+	}
+console.log(globalScimmia);
+
+```		
+
+	Ci restituirà "mela";
     In JavaScript capire lo scope è fondamentale, perché determina dove una variabile esiste e può essere letta o modificata.
 
 # Presentatore 6:
