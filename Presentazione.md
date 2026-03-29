@@ -11,7 +11,7 @@
 	il nostro esperto Samuel consiglia di dichiarare sempre prima con const e usare let quando è necessaria una modifica durante lo svolgimento del programma.
 
 # Presentatore 3 (Sara):
-	Il ciclo di vita di una scim... variabile inizia con la dichiarazione, cioè il momento in cui viene creata usando const o let. Questo equivale a chiedere al computer di creare una nuova scatola.
+	Il ciclo di vita di una banan... variabile inizia con la dichiarazione, cioè il momento in cui viene creata usando const o let. Questo equivale a chiedere al computer di creare una nuova scatola.
 	Successivamente avviene l’inizializzazione, con l’assegnazione del primo valore.
 	Con const, queste due fasi devono coincidere.
 	Infine può esserci una riassegnazione, cioè il cambiamento del valore, possibile solo nel caso di let. 
